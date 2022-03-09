@@ -21,4 +21,15 @@
 # print (plus,minus,tims,mana)
 
 
+# import time
+# localtime = time.asctime(time.localtime(time.time()))
+# print ("wellcome:""\n", localtime)
 
+# num1 = int(input("enter number a:"))
+# num2 = int(input("enter number b:"))
+# num3 = int(input("enter number c:"))
+# num4 = int(input("enter number d:"))
+# print (num1+num2+num3+num4 /4)
+
+
+nails = int(input("how many nails:"))
