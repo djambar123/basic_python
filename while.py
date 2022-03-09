@@ -20,5 +20,5 @@ while num < 21:
     if num%2!= 0:
         print(num)
     num+=1
-print("done")
-#ghghgh
+print("done  ")
+#ghghghhjashdjaksdhasjk
