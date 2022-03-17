@@ -45,4 +45,17 @@
 # num = str(int(phone))
 # print("your number is:", "0" +num)
 
+# q1
+# print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
 
+# q2
+# import sys
+# print("Python version")
+# print (sys.version)
+# print (sys.version_info)
+
+# q3
+# import datetime
+# now = datetime.datetime.now()
+# print("Current date and time : ")
+# print(now.strftime("%Y-%m-%d %H:%M:%S"))
