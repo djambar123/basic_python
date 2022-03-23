@@ -64,18 +64,82 @@
 #     else:
 #         print("done")
 
-def change(x):
-    changeFrom20=x//20
-    print("20*",changeFrom20)
-    changeFrom10=(x-(20*changeFrom20))//10
-    print("10*",changeFrom10)
-    changefrom5=(x-((changeFrom20*20)+(changeFrom10*10)))//5
-    print("5*",changefrom5)
-    changefrom1=x-((changeFrom20*20)+(changeFrom10*10)+(changefrom5*5))
-    print("1*",changefrom1)
-    print("--------\n",x)
-change(76)
+# def change(x):
+#     changeFrom20=x//20
+#     print("20*",changeFrom20)
+#     changeFrom10=(x-(20*changeFrom20))//10
+#     print("10*",changeFrom10)
+#     changefrom5=(x-((changeFrom20*20)+(changeFrom10*10)))//5
+#     print("5*",changefrom5)
+#     changefrom1=x-((changeFrom20*20)+(changeFrom10*10)+(changefrom5*5))
+#     print("1*",changefrom1)
+#     print("--------\n",x)
+#
+# change(87)
 
 # def power(x,y):
 #     c = x**y
 #     return(c)
+
+# def above1000(j):
+#     a = j / 100
+#     c = a * 30
+#     e = j - c
+#     return e
+#
+#
+# def price(x):
+#     if x >1000:
+#         print(above1000(x))
+#     else:
+#         b = x / 100
+#         d = b * 10
+#         r = x - d
+#         print(r)
+
+#q9
+# import math
+#
+# def a (x,y):
+#     gcd = 1
+#     if x % y == 0:
+#         return y
+#     for i in range(int(y / 2), 0, -1):
+#         if x % i == 0 and y % i == 0:
+#             gcd = i
+#             break
+#     return gcd
+#
+# def b (x,y):
+#     lcd = 1
+#     for i in range (x,y):
+#       if x % i == 0 and y % i == 0 :
+#           lcd = i
+#           return x
+#
+# def c (x,y):
+#     res = x**y
+#     return res
+#
+# def d (x,y):
+#     res = math.sqrt(x)-math.sqrt(y)
+#     return res
+#
+# num1 = int(input("enter first number:"))
+# num2 = int(input("enter seconed number:"))
+# choice = input("enter\n 'a' for the biggest devider\n 'b' for the smallest divider\n c for he result of pow(a,b)\n 'd' for the result of sqrt(a)-sqrt(b)\n 'e' for exit\n")
+# if choice == 'a':
+#     print(a(num1,num2))
+# elif choice == 'b':
+#     print(b(num1,num2))
+# elif choice == 'c':
+#     print(c(num1,num2))
+# elif choice == 'd':
+#     print(d(num1,num2))
+# elif choice == 'e':
+#     print("done")
+
+# customerid = int(input("enter customer number:"))
+# value = int (input("enter the value of the product : "))
+# paidInTime = int(input("if bills paid in time enter '1' \n if not enter '0':\n"))
+# numyears = int(input("enter how many years you a client :"))

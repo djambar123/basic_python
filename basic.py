@@ -60,7 +60,20 @@
 # print("Current date and time : ")
 # print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
+# q4
 # from math import pi
 # r = float(input ("Input the radius of the circle : "))
 # print ("The area of the circle with radius " + str(r) + " is: " + str(pi * r**2))
+
+# q5
+# firstname = input("Input your First Name : ")
+# lastname = input("Input your Last Name : ")
+# print ("Hey  " + lastnamename + " " + firstnamename)
+
+# q6
+# num = input("Input some comma seprated numbers : ")
+# list =num.split(",")
+# tup = tuple(list)
+# print('List : ',list)
+# print('Tuple : ',tup)
 
