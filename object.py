@@ -167,48 +167,117 @@
 #
 # del cat1.city
 
-class Cars:
-    def __init__(self,model,color,price):
-        self.__model = model
-        self.__color = color
-        self.__price = price
+# class Cars:
+#     def __init__(self,model,color,price):
+#         self.__model = model
+#         self.__color = color
+#         self.__price = price
+#
+#     def getmodel(self):
+#         return self.__model
+#
+#     def setmodel(self, model):
+#         self.__model = model
+#
+#     def getcolor(self):
+#         return self.__color
+#
+#     def setcolor(self, color):
+#         self.__color = color
+#
+#     def getprice(self):
+#         return self.__price
+#
+#     def setprice(self, price):
+#         self.__price = price
+#
+#     def __str__(self):
+#         return self.__model+' '+str(self.__color)+' '+str(self.__price)
+#
+# car1 = Cars("SUV","black",47000)
+# car2 = Cars("BMW","white",69000)
+# car3 = Cars("Honda","Yellow",37000)
+# car4 = Cars("Mersedes","rad",80000)
+#
+# pric = [car1,car2,car3,car4]
+#
+# def maxPrice():
+#     max = 0
+#     for i in range(len(pric)-1):
+#         if pric[i].getprice() > pric[i+1].getprice():
+#             max = pric[i]
+#         else:
+#             max = pric[i+1]
+#     return max
+#
+# print(Cars.__str__(maxPrice()))
 
-    def getmodel(self):
-        return self.__model
+from datetime import *
 
-    def setmodel(self, model):
-        self.__model = model
+class Students:
+    def __init__(self,name,dateOfbirth,id,classroom,grade_Math,grade_History,grade_Litreture):
+        self.__name = name
+        self.__dateOfbirth = dateOfbirth
+        self.__id = id
+        self.__classroom = classroom
+        self.__grademath = grade_Math
+        self.__grade_history = grade_History
+        self.__grade_litreture = grade_Litreture
 
-    def getcolor(self):
-        return self.__color
+    def dateofbirth(self):
+        return self.__dateOfbirth
 
-    def setcolor(self, color):
-        self.__color = color
+    def getclassroom(self):
+        return self.__classroom
 
-    def getprice(self):
-        return self.__price
+    def setclassroom(self, classroom):
+        self.__classroom = classroom
 
-    def setprice(self, price):
-        self.__price = price
+    def getmath(self):
+        return self.__grademath
+
+    def setmath(self, grademath):
+        self.__grademath = grademath
+
+    def getgrade_History(self):
+        return self.__grade_History
+
+    def setgrade_History(self, grade_History):
+        self.__grade_history = grade_History
+
+    def getgrade_Litreture(self):
+        return self.__grade_Litreture
+
+    def setgrade_Litreture(self, grade_Litreture):
+        self.__grade_Litreture = grade_Litreture
+
+    def age_avgGrade(self):
+        x = date.today()
+        age = x.year - self.__dateOfbirth
+        avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)/3
+        return age , avg
+
+    def avg
 
     def __str__(self):
-        return self.__model+' '+str(self.__color)+' '+str(self.__price)
+        return 'The dimploma of :\n'+self.__name +' \n '+self.__id+' \n '+self.__dateOfbirth
 
-car1 = Cars("SUV","black",47000)
-car2 = Cars("BMW","white",69000)
-car3 = Cars("Honda","Yellow",37000)
-car4 = Cars("Mersedes","rad",80000)
+    def diploma(self):
 
-pric = [car1,car2,car3,car4]
 
-def maxPrice():
-    max = 0
-    for i in range(len(pric)-1):
-        if pric[i].getprice() > pric[i+1].getprice():
-            max = pric[i]
-    return max
 
-print(Cars.__str__(maxPrice()))
+
+student1 = Students("Daniel",1994,"1","class 1",85,91,87)
+student2 = Students("Eli",1992,'2','class 1',71,89,98)
+student3 = Students("Miki",1997,'3','class 1',89,82,98)
+student4 = Students("Fasil",1998,'4','class 1',83,92,98)
+
+
+
+
+
+
+
 
 
 
