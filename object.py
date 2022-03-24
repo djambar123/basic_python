@@ -222,7 +222,7 @@ class Students:
         self.__classroom = classroom
         self.__grademath = grade_Math
         self.__grade_history = grade_History
-        self.__grade_litreture = grade_Litreture
+        self.__grade_Litreture = grade_Litreture
 
     def dateofbirth(self):
         return self.__dateOfbirth
@@ -240,7 +240,7 @@ class Students:
         self.__grademath = grademath
 
     def getgrade_History(self):
-        return self.__grade_History
+        return self.__grade_history
 
     def setgrade_History(self, grade_History):
         self.__grade_history = grade_History
@@ -251,32 +251,48 @@ class Students:
     def setgrade_Litreture(self, grade_Litreture):
         self.__grade_Litreture = grade_Litreture
 
-    def age_avgGrade(self):
+    def age(self):
         x = date.today()
         age = x.year - self.__dateOfbirth
-        avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)/3
-        return age , avg
+        return age
 
-    def avg
+    def avg(self):
+        avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)/3
+        return avg
 
     def __str__(self):
-        return 'The dimploma of :\n'+self.__name +' \n '+self.__id+' \n '+self.__dateOfbirth
+        return 'The dimploma of :\n'+self.__name +' \n '+str(self.__id)+' \n '+str(self.__dateOfbirth)
 
     def diploma(self):
+        details = self.__name , self.__id
+        avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)//3
+        grads = self.__grade_Litreture , self.__grade_history , self.__grademath
+        if avg > 90 :
+            print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nGraduate with distinction")
+        elif avg < 60 :
+            print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nFaild!!")
+        else:
+            print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nPassed!!")
 
 
 
-
-student1 = Students("Daniel",1994,"1","class 1",85,91,87)
+student1 = Students("Daniel",1994,"1","class 1",79,91,90)
 student2 = Students("Eli",1992,'2','class 1',71,89,98)
-student3 = Students("Miki",1997,'3','class 1',89,82,98)
-student4 = Students("Fasil",1998,'4','class 1',83,92,98)
+student3 = Students("Miki",1997,'3','class 1',89,82,91)
+student4 = Students("Fasil",1998,'4','class 1',83,92,90)
 
+a = student1.avg(),student2.avg(),student3.avg(),student4.avg()
+ls = [student1,student2,student3,student4]
+def maxavg():
+    max = 0
+    for i in range(len(ls)-1):
+        if ls[i].avg() > ls[i+1].avg():
+            max = ls[i]
+        else:
+            max = ls[i+1]
+    return max
 
-
-
-
-
+print(Students.__str__(maxavg()))
 
 
 
