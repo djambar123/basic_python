@@ -212,90 +212,173 @@
 #
 # print(Cars.__str__(maxPrice()))
 
-from datetime import *
+# from datetime import *
+#
+# class Students:
+#     def __init__(self,name,dateOfbirth,id,classroom,grade_Math,grade_History,grade_Litreture):
+#         self.__name = name
+#         self.__dateOfbirth = dateOfbirth
+#         self.__id = id
+#         self.__classroom = classroom
+#         self.__grademath = grade_Math
+#         self.__grade_history = grade_History
+#         self.__grade_Litreture = grade_Litreture
+#
+#     def dateofbirth(self):
+#         return self.__dateOfbirth
+#
+#     def getclassroom(self):
+#         return self.__classroom
+#
+#     def setclassroom(self, classroom):
+#         self.__classroom = classroom
+#
+#     def getmath(self):
+#         return self.__grademath
+#
+#     def setmath(self, grademath):
+#         self.__grademath = grademath
+#
+#     def getgrade_History(self):
+#         return self.__grade_history
+#
+#     def setgrade_History(self, grade_History):
+#         self.__grade_history = grade_History
+#
+#     def getgrade_Litreture(self):
+#         return self.__grade_Litreture
+#
+#     def setgrade_Litreture(self, grade_Litreture):
+#         self.__grade_Litreture = grade_Litreture
+#
+#     def age(self):
+#         x = date.today()
+#         age = x.year - self.__dateOfbirth
+#         return age
+#
+#     def avg(self):
+#         avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)/3
+#         return avg
+#
+#     def __str__(self):
+#         return 'The dimploma of :\n'+self.__name +' \n '+str(self.__id)+' \n '+str(self.__dateOfbirth)
+#
+#     def diploma(self):
+#         details = self.__name , self.__id
+#         print(details)
+#         avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)//3
+#         grads = self.__grade_Litreture , self.__grade_history , self.__grademath
+#         if avg > 90 :
+#             print("name: ",details[0],"\n","id: ",details[1],"\n","literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nGraduate with distinction")
+#         elif avg < 60 :
+#             print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nFaild!!")
+#         else:
+#             print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nPassed!!")
+#
+#
+#
+# student1 = Students("Daniel",1994,"1","class 1",79,91,90)
+# student2 = Students("Eli",1992,'2','class 1',71,89,98)
+# student3 = Students("Miki",1997,'3','class 1',89,82,91)
+# student4 = Students("Fasil",1998,'4','class 1',83,92,90)
+#
+# a = student1.avg(),student2.avg(),student3.avg(),student4.avg()
+# ls = [student1,student2,student3,student4]
+# def maxavg():
+#     max = 0
+#     for i in range(len(ls)-1):
+#         if ls[i].avg() > ls[i+1].avg():
+#             max = ls[i]
+#         else:
+#             max = ls[i+1]
+#     return max
+#
+# # print(Students.__str__(maxavg()))
+# # print(student4.age())
+# # print(Students.avg(student4))
+#
+# print(Students.diploma(maxavg()))
 
-class Students:
-    def __init__(self,name,dateOfbirth,id,classroom,grade_Math,grade_History,grade_Litreture):
-        self.__name = name
-        self.__dateOfbirth = dateOfbirth
-        self.__id = id
-        self.__classroom = classroom
-        self.__grademath = grade_Math
-        self.__grade_history = grade_History
-        self.__grade_Litreture = grade_Litreture
+#
+# class person:
+#     def __init__(self, name, id):
+#         self.__name = name
+#         self.__id = id
+#
+#     def getname(self):
+#          return self.__name
+#
+#     def setname(self, name):
+#          self.__name = name
+#
+#     def getid(self):
+#          return self.__id
+#
+#     def setid(self, id):
+#          self.__id = id
+#
+#     def __str__(self):
+#          return self.__name +' \n '+str(self.__id)
+#
+# class Students(person):
+#
+#     def __init__(self,name,id,grade):
+#         super().__init__(name,id)
+#         self.__grade = grade
+#
+#     def getgrade(self):
+#         return self.__grade
+#
+#     def setgrade(self,grade):
+#         self.__grade = grade
+#
+#     def __str__(self):
+#         return super().__str__()+' '+str(self.__grade)
+#
+# s1 = Students('Daniel',545,80)
+# print(s1)
 
-    def dateofbirth(self):
-        return self.__dateOfbirth
 
-    def getclassroom(self):
-        return self.__classroom
+class Vehicles:
+    def __init__(self,color,model,wheels_num):
+        self.__color = color
+        self.__model = model
+        self.__wheels_num = wheels_num
 
-    def setclassroom(self, classroom):
-        self.__classroom = classroom
+    def getcolor(self):
+         return self.__color
 
-    def getmath(self):
-        return self.__grademath
+    def setcolor(self,color):
+        self.__color = color
 
-    def setmath(self, grademath):
-        self.__grademath = grademath
+    def getmodel(self):
+         return self.__model
 
-    def getgrade_History(self):
-        return self.__grade_history
+    def setmodel(self,model):
+        self.__model = model
 
-    def setgrade_History(self, grade_History):
-        self.__grade_history = grade_History
+    def getwheels_num(self):
+        return self.__wheels_num
 
-    def getgrade_Litreture(self):
-        return self.__grade_Litreture
-
-    def setgrade_Litreture(self, grade_Litreture):
-        self.__grade_Litreture = grade_Litreture
-
-    def age(self):
-        x = date.today()
-        age = x.year - self.__dateOfbirth
-        return age
-
-    def avg(self):
-        avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)/3
-        return avg
+    def setwheels_num(self, wheels_num):
+        self.__wheels_num = wheels_num
 
     def __str__(self):
-        return 'The dimploma of :\n'+self.__name +' \n '+str(self.__id)+' \n '+str(self.__dateOfbirth)
+        return self.__color+' '+str(self.__model)+' '+str(self.__wheels_num)
 
-    def diploma(self):
-        details = self.__name , self.__id
-        avg = (self.__grade_Litreture + self.__grade_history + self.__grademath)//3
-        grads = self.__grade_Litreture , self.__grade_history , self.__grademath
-        if avg > 90 :
-            print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nGraduate with distinction")
-        elif avg < 60 :
-            print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nFaild!!")
-        else:
-            print("name: ",details[0],"id: ",details[1],"literature_grade: ",grads[0],"history_grade: ",grads[1],"math_grade: ",grads[2],"\nThe avg: ",avg,"\nPassed!!")
+class Cars:
+    def __init__(self,color,model,wheels_num,company):
+        super().__init__(color,model,wheels_num)
+        self.__company = company
 
+    def getcompany(self):
+        return self.__company
 
+    def setgrade(self,company):
+        self.__company = company
 
-student1 = Students("Daniel",1994,"1","class 1",79,91,90)
-student2 = Students("Eli",1992,'2','class 1',71,89,98)
-student3 = Students("Miki",1997,'3','class 1',89,82,91)
-student4 = Students("Fasil",1998,'4','class 1',83,92,90)
-
-a = student1.avg(),student2.avg(),student3.avg(),student4.avg()
-ls = [student1,student2,student3,student4]
-def maxavg():
-    max = 0
-    for i in range(len(ls)-1):
-        if ls[i].avg() > ls[i+1].avg():
-            max = ls[i]
-        else:
-            max = ls[i+1]
-    return max
-
-print(Students.__str__(maxavg()))
-
-
-
+    def __str__(self):
+         return super().__str__()+' '+str(self.__company)
 
 
 
