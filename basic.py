@@ -170,3 +170,46 @@
 #     for j in ls:
 #         if ls[i]==ls[j]:
 #             print(i)
+
+#q19
+# base = int(input("Input the base : "))
+# height = int(input("Input the height : "))
+# area = base * height / 2
+# print(area)
+
+# q20
+# num = int (input("enter a number "))
+# num2 = int (input("enter a second number "))
+# num3 = int (input("enter a t third umber "))
+# if num == num2 or num2 == num3  or num == num3:
+#     sum = 0
+# else:
+#     sum = num + num2 + num3
+# print(sum)
+
+# q21
+# def sume(x,y):
+#     sum = x+y
+#     if sum >15 and sum < 20:
+#        sum = 20
+#        return sum
+#     else:
+#         return sum
+
+# q22
+# def details():
+#     name = "daniel"
+#     age = 28
+#     address = "Hadera"
+#     print(name,"\n",age,"\n",address)
+
+# q23
+# x = 4
+# y = 3
+# z = (x + y) * (x + y)
+# print(z)
+
+
+
+
+

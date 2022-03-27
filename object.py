@@ -339,7 +339,7 @@
 # print(s1)
 
 
-class Vehicles:
+class Vehicles():
     def __init__(self,color,model,wheels_num):
         self.__color = color
         self.__model = model
@@ -365,20 +365,6 @@ class Vehicles:
 
     def __str__(self):
         return self.__color+' '+str(self.__model)+' '+str(self.__wheels_num)
-
-class Cars:
-    def __init__(self,color,model,wheels_num,company):
-        super().__init__(color,model,wheels_num)
-        self.__company = company
-
-    def getcompany(self):
-        return self.__company
-
-    def setgrade(self,company):
-        self.__company = company
-
-    def __str__(self):
-         return super().__str__()+' '+str(self.__company)
 
 
 
