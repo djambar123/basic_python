@@ -1,6 +1,6 @@
 from prdetors import predators
 
-class lion(predators):
+class Lion(predators):
     def __init__(self,name, gender, fertile):
         super().__init__(name,gender,fertile,kind ='predators')
 

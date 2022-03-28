@@ -209,7 +209,50 @@
 # z = (x + y) * (x + y)
 # print(z)
 
+# q24
+# import getpass
+# print(getpass.getuser())
 
+# q25
+# feet = int(input("Input distance in feet: "))
+# inches = feet * 12
+# yards = feet / 3.0
+# miles = feet / 5280.0
+# print(inches,yards,miles)
 
+# q26
+# days = int(input("Input days: "))
+# hours = int(input("Input hours: "))
+# minutes = int(input("Input minutes: "))
+# seconds = int(input("Input seconds: "))
+# x = days * 3600 * 24
+# b = hours * 3600
+# c = minutes * 60
+# time = x + b + c + seconds
+# print(time)
 
+# q27
+# x = 30
+# y = 20
+# print(x,y,"\n",x+y)
 
+# q28
+# x=1
+# if x == 1:
+#    print("First day of a Month!")
+# print()
+
+# q29
+# x = 21
+# print("Identity: ",x)
+# print(type(x))
+# print( id(x))
+
+# q30
+# num = int(input("enter a number: "))
+# if num > 0:
+#    print("it is positive number")
+# elif num == 0:
+#    print("it is zero")
+# else:
+#    print("it is a negative number")

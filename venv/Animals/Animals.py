@@ -26,9 +26,6 @@ class Mammals():
         return self.name+' '+str(self.gender)+' '+str(self.fertile)
 
 
-    def pairing(self,zan1,zan2,baby):
-        if zan1 == 'lion' and zan2 == 'tiger':
-            baby = 'Liger'
-        elif zan1 == 'lion' and zan2 == 'tiger':
+
 
 
