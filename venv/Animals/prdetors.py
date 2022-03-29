@@ -6,9 +6,9 @@ class predators(Mammals):
         super().__init__(name, gender, fertile)
         # self.kind = kind
 
-    # def getkind(self):
-    #     return self.kind
-    #
+    # def voice(self):
+    #     print()
+
     # def setkind(self, kind):
     #     self.kind = kind
 
