@@ -1,12 +1,15 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-user_name = "YOUR EMAILED"
-password = "YOUR PASSWORD"
-driver = webdriver.Chrome()
-driver.get("https://www.facebook.com")
-element = driver.find_element("Email")
+
+
+user_name = "0545296962"
+password = "4545801"
+driver = webdriver.Chrome("/Users/dnylgmbr/Desktop/basic_python/selenium/chromedriver")
+driver.get('https://www.facebook.com')
+element = driver.find_element(By.ID, "email")
 element.send_keys(user_name)
-element = driver.find_element("password")
+element = driver.find_element(By.ID, "pass")
 element.send_keys(password)
 element.send_keys(Keys.RETURN)
-element.clear()
+element.close()
