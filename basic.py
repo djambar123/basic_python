@@ -256,3 +256,66 @@
 #    print("it is zero")
 # else:
 #    print("it is a negative number")
+
+# a = int (input("enter nuber one:"))
+# b = int(input("enter nuber two:"))
+# if a > b :
+#     print(a)
+# else:
+#     print(b)
+#
+# a = int (input("enter nuber one:"))
+# b = []
+# count = 0
+# while count < 3:
+#     a = int(input("enter nuber one:"))
+#     b.append(a)
+#     count += 1
+# if b[0] > b[1] and b[0]> b[2]:
+#     print(b[0])
+# elif b[1] > b[2]:
+#     print(b[1])
+# else:
+#     if b[0] == b[1] == b[2]:
+#         print("numbers are the same")
+#     else:
+#         print(b[2])
+
+hour = int (input("enter time of parking 1 - 24:"))
+yaer = input("the model of the car:")
+elct = input("is the car electric y/n: ")
+
+def dicount(a):
+    if yaer == '2022' and elct == 'y':
+        b = (a * hour) / 100
+        c = b * 20
+        d = (a * hour) - c
+        return (d)
+    elif yaer == '2022':
+        b = (a * hour) / 100
+        c = b * 15
+        d = (a * hour) - c
+        return (d)
+    else:
+        b = (a * hour) / 100
+        c = b * 10
+        d = (a * hour) - c
+        return (d)
+# for i in range(hour):
+if hour <= 3:
+    print("the payment is : 20 ₪ per hour")
+    a = 20
+    print(dicount(a))
+elif hour > 3 and hour < 5:
+    print("the payment is : 15 ₪ per hour")
+    a = 15
+    print(dicount(a))
+elif hour > 5 and hour < 24:
+    print("the payment is : 10 ₪ per hour")
+    a = 10
+    print(dicount(a))
+else:
+    print("the payment is : 5 ₪ per hour")
+    a = 5
+    print(dicount(a))
+
