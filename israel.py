@@ -33,32 +33,3 @@
 #     dicount(price)
 #
 #
-# ticket = int(input("Enter ticket price"))
-# luggage = int(input("Enter luggage kg : "))
-# class_ = input("What your class: ")
-#
-# def dicount(b,a,c):
-#     res = 0
-#     if a <= 20:
-#         d = b * 0.20
-#         res = b - d
-#         print("discount luggage of 20% =", res)
-#     elif 20 < a < 40:
-#         d = b * 0.25
-#         res = b - d
-#         print("discount luggage of 25% =", res)
-#     else:
-#         d = b * 0.30
-#         res = b - d
-#         print("discount luggage of 30% =", res)
-#     if c in ("first class", "bisness"):
-#         d = res * 0.05
-#         res -= d
-#         print("discount on class of 5% =",res)
-#     else:
-#         d = res * 0.01
-#         res -= d
-#         print("discount on class of 1% =",res)
-#     return res
-#
-# dicount(ticket, luggage, class_)
